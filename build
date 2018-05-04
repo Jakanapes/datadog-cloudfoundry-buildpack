@@ -49,6 +49,7 @@ function main() {
     DOWNLOAD="true"
   fi
   if [ -n "$DOWNLOAD" ]; then
+    echo "Downloading dogstatsd, trace-agent, and puppy"
     # Delete the old ones
     rm -f $SRCDIR/lib/puppy
     rm -f $SRCDIR/lib/dogstatsd
